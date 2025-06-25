@@ -2,10 +2,10 @@ import pandas as pd
 import bibtexparser
 
 # --- Load Semantic Scholar + CrossRef merged metadata ---
-sem_cr_df = pd.read_csv("C:/Users/PC/.spyder-py3/Bib/semantic_crossref.csv")  # Already includes source column
+sem_cr_df = pd.read_csv("semantic_crossref.csv")  # Already includes source column
 
 # --- Load IEEE ---
-ieee_df = pd.read_csv("C:/Users/PC/.spyder-py3/Bib/ieeexplore.csv")
+ieee_df = pd.read_csv("ieeexplore.csv")
 ieee_normalized = pd.DataFrame({
     'title': ieee_df['Document Title'],
     'authors': ieee_df['Authors'],
@@ -19,7 +19,7 @@ ieee_normalized = pd.DataFrame({
 })
 
 # --- Load ACM BibTeX ---
-with open("C:/Users/PC/.spyder-py3/Bib/acm.bib", encoding='utf-8') as bibtex_file:
+with open("acm.bib", encoding='utf-8') as bibtex_file:
     acm_bib = bibtexparser.load(bibtex_file)
 acm_df = pd.DataFrame(acm_bib.entries)
 
