@@ -14,7 +14,7 @@ query_keywords = [
 query_string = " ".join(query_keywords)
 
 # Output file
-output_csv = "C:/Users/PC/.spyder-py3/Bib/semantic_crossref.csv"
+output_csv = "semantic_crossref.csv"
 
 # ---- SEMANTIC SCHOLAR API ---- #
 def query_semantic_scholar(query, limit=100, max_results=500):
