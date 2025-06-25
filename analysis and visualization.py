@@ -12,7 +12,7 @@ from matplotlib import colors
 nltk.download('stopwords')
 
 # ========== LOAD DATA ==========
-df = pd.read_csv("C:/Users/PC/.spyder-py3/Bib/Specific/unified_metadata.csv")
+df = pd.read_csv("unified_metadata.csv")
 
 # ========== SETUP ==========
 # Normalizing DOI and Title for deduplication
